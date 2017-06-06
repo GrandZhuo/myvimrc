@@ -23,3 +23,7 @@ set nu
 
 " 设置历史记录保存数量
 set history=200
+
+" 设置可加载插件
+set nocompatible
+filetype plugin on
