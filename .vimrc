@@ -2,7 +2,7 @@
 syntax enable
 
 " 主题
-colorscheme solarized
+"colorscheme solarized
 "set background=dark
 
 " 修复backspace问题
