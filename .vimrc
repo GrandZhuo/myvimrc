@@ -27,3 +27,6 @@ set history=200
 " 设置可加载插件
 set nocompatible
 filetype plugin on
+
+" 设置默认高亮查找匹配"
+set hlsearch
