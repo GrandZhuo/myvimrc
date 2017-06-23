@@ -5,6 +5,10 @@ syntax enable
 "colorscheme solarized
 "set background=dark
 
+" 设置可加载插件
+set nocompatible
+filetype plugin on
+
 " 修复backspace问题
 set backspace=indent,eol,start
 
@@ -23,10 +27,6 @@ set nu
 
 " 设置历史记录保存数量
 set history=200
-
-" 设置可加载插件
-set nocompatible
-filetype plugin on
 
 " 设置默认高亮查找匹配"
 set hlsearch
