@@ -31,8 +31,8 @@ filetype plugin on
 " 设置默认高亮查找匹配"
 set hlsearch
 
-
-
+" 激活增量查找
+set incsearch
 
 " 创建<C-l>快捷键关闭高亮功能"
 nnoremap <silent> <C-l>	:<C-u>nohlsearch<CR><C-l>
