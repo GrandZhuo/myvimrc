@@ -11,7 +11,7 @@ then
 	mv ~/.vimrc ~/.vimrc_old
 fi
 
-cp ./.vimrc ~/
+cp ./vimrc ~/.vimrc
 
 if [ -f ~/.vimrc ]
 then
