@@ -39,3 +39,9 @@ runtime macros/matchit.vim
 
 " 创建<C-l>快捷键关闭高亮功能"
 nnoremap <silent> <C-l>	:<C-u>nohlsearch<CR><C-l>
+
+" 每次保存文件时调用ctags
+"autocmd BufWritePost * call system("ctags -R")
+
+" 创建F5快捷键建立tags
+nnoremap <f5> :!ctags -R<CR>
