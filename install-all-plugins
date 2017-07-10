@@ -13,7 +13,23 @@ then
 	fi
 fi
 
-cp ./plugin/*.* ~/.vim/plugin/
+cp ./plugin/* ~/.vim/plugin/
 echo "plugins installed!"
+
+if [ ! -d ~/.vim/doc ]
+then
+	echo "directory ~/.vim/doc not found, creat..."
+	mkdir ~/.vim/doc
+
+	if [ -d ~/.vim/doc ]
+	then
+		echo "creat directory succeeded!"
+	else
+		echo "creat directory failed!"
+	fi
+fi
+
+cp ./doc/* ~/.vim/doc/
+echo "docs installed!"
 
 exit 0
