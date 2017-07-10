@@ -45,3 +45,7 @@ nnoremap <silent> <C-l>	:<C-u>nohlsearch<CR><C-l>
 
 " 创建F5快捷键建立tags
 nnoremap <f5> :!ctags -R<CR>
+
+" Tlist配置
+let Tlist_Show_One_File=1
+let Tlist_Exit_OnlyWindow=1
