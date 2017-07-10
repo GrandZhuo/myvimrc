@@ -49,3 +49,8 @@ nnoremap <f5> :!ctags -R<CR>
 " Tlist配置
 let Tlist_Show_One_File=1
 let Tlist_Exit_OnlyWindow=1
+
+" WinManager配置
+let g:winManagerWindowLayout='FileExplorer|TagList'
+" wm打开文件浏览器和Tlist
+nmap wm :WMToggle<cr>
