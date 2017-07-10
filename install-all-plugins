@@ -1,0 +1,19 @@
+#!/bin/sh
+
+if [ ! -d ~/.vim/plugin ]
+then
+	echo "directory ~/.vim/plugin not found, creat..."
+	mkdir ~/.vim/plugin
+
+	if [ -d ~/.vim/plugin ]
+	then
+		echo "creat directory succeeded!"
+	else
+		echo "creat directory failed!"
+	fi
+fi
+
+cp ./plugin/*.* ~/.vim/plugin/
+echo "plugins installed!"
+
+exit 0
