@@ -51,6 +51,6 @@ let Tlist_Show_One_File=1
 let Tlist_Exit_OnlyWindow=1
 
 " WinManager配置
-let g:winManagerWindowLayout='FileExplorer|TagList'
+let g:winManagerWindowLayout='TagList|FileExplorer'
 " wm打开文件浏览器和Tlist
 nmap wm :WMToggle<cr>
