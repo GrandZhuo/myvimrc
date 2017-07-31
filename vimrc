@@ -55,5 +55,5 @@ let g:winManagerWindowLayout='TagList|FileExplorer'
 " wm打开文件浏览器和Tlist
 nmap wm :WMToggle<cr>
 
-" <C-p>切换paste模式
-set pastetoggle=<C-p>
+" <F12>切换paste模式
+set pastetoggle=<F12>
