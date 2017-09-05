@@ -3,7 +3,7 @@
 if [ ! -d ~/.vim/plugin ]
 then
 	echo "directory ~/.vim/plugin not found, creat..."
-	mkdir ~/.vim/plugin
+	mkdir -p ~/.vim/plugin
 
 	if [ -d ~/.vim/plugin ]
 	then
@@ -19,7 +19,7 @@ echo "plugins installed!"
 if [ ! -d ~/.vim/doc ]
 then
 	echo "directory ~/.vim/doc not found, creat..."
-	mkdir ~/.vim/doc
+	mkdir -p ~/.vim/doc
 
 	if [ -d ~/.vim/doc ]
 	then
