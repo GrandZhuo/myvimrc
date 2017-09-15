@@ -116,7 +116,7 @@ let Tlist_Compact_Format=1
 " WinManager配置
 let g:winManagerWindowLayout='TagList|FileExplorer'
 " wm打开文件浏览器和Tlist
-nnoremap <leader>wm :WMToggle<cr>
+nnoremap wm :WMToggle<cr>
 
 " <F12>切换paste模式
 set pastetoggle=<F12>
