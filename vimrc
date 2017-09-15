@@ -102,6 +102,9 @@ nnoremap <silent> <C-l>	:<C-u>nohlsearch<CR><C-l>
 
 " 创建F5快捷键建立tags
 nnoremap <f5> :!ctags -R<CR>
+ 
+" 设置当前目录找不到tags文件到上层目录查找
+set tags=tags;/
 
 " Tlist配置
 let Tlist_Show_One_File=1
