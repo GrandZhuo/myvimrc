@@ -190,6 +190,14 @@ let g:ycm_collect_identifiers_from_comments_and_strings = 1
 let g:ycm_error_symbol = '✗'
 let g:ycm_warning_symbol = '⚠'
 
+" 设置颜色
+"highlight YcmErrorSign                      error标记颜色
+"highlight YcmWarningSign ctermbg=none       warning标记颜色
+"highlight YcmErrorSection                   代码中出错字段颜色
+"highlight YcmWarningSection ctermbg=none
+"highlight YcmErrorLine                      出错行颜色
+"highlight YcmWarningLine
+
 "**********************************************************************
 "                     C，C++, Java F10编译运行                        *
 "**********************************************************************
