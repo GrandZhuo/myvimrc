@@ -112,7 +112,7 @@ let Tlist_Compact_Format=1
 " WinManager配置
 let g:winManagerWindowLayout='TagList|FileExplorer'
 " wm打开文件浏览器和Tlist
-nmap wm :WMToggle<cr>
+nnoremap wm :WMToggle<cr>
 
 " <F12>切换paste模式
 set pastetoggle=<F12>
@@ -154,7 +154,7 @@ let g:ycm_confirm_extra_conf=0
 let g:ycm_collect_identifiers_from_tag_files = 1 
 
 " YCM查错
-nmap <leader>f4 :YcmDiags<CR>
+nnoremap <leader>f4 :YcmDiags<CR>
 "
 " 自动补全配置
 " 让Vim的补全菜单行为与一般IDE一致(参考VimTip1228)
@@ -236,10 +236,14 @@ endfunc
 "                             键盘命令                                *
 "**********************************************************************
 " 保存文件
-nmap <leader>w :w<CR>
+nnoremap <leader>w :w<CR>
+nnoremap <leader>x :x<CR>
+
+" 关闭文件
+nnoremap <leader>q :q<CR>
 
 " 查找文件
-nmap <leader>f :find<CR>
+nnoremap <leader>f :find<CR>
 
 " 映射全选+复制 ctrl+a
 map <C-A> ggVGY
@@ -249,13 +253,13 @@ map! <C-A> <Esc>ggVGY
 vmap <C-c> "+y
 
 " 打开quickfix列表
-nmap <leader>co :copen<CR>
+nnoremap <leader>co :copen<CR>
 
 " 关闭quickfix列表
-nmap <leader>ccl :cclose<CR>
+nnoremap <leader>ccl :cclose<CR>
 
 " 关闭窗口
-nmap <leader>clo :close<CR>
+nnoremap <leader>clo :close<CR>
 
 "**********************************************************************
 "                               文件命令                              *
