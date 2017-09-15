@@ -243,7 +243,7 @@ nnoremap <leader>x :x<CR>
 nnoremap <leader>q :q<CR>
 
 " 查找文件
-nnoremap <leader>f :find<CR>
+nnoremap <leader>fd :find 
 
 " 映射全选+复制 ctrl+a
 map <C-A> ggVGY
