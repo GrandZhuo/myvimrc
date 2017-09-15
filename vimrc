@@ -115,6 +115,15 @@ nmap wm :WMToggle<cr>
 " <F12>切换paste模式
 set pastetoggle=<F12>
 
+" <F2>保存文件并make
+nnoremap <F2> :wa<CR>:make<CR>
+
+" <F3>保存文件并make clean;make
+nnoremap <F3> :wa<CR>:make clean;make<CR>
+
+" 设置normal模式开启鼠标支持
+set mouse=n
+
 " 设置path
 set path+=../**
 
@@ -151,7 +160,7 @@ set completeopt=longest,menu
 
 autocmd InsertLeave * if pumvisible() == 0|pclose|endif	"离开插入模式后自动关闭预览窗口
 
-inoremap <expr> <CR>       pumvisible() ? "\<C-y>" : "\<CR>"	"回车即选中当前项
+"inoremap <expr> <CR>       pumvisible() ? "\<C-y>" : "\<CR>"	"回车即选中当前项
 
 "上下左右键的行为 会显示其他信息
 inoremap <expr> <Down>     pumvisible() ? "\<C-n>" : "\<Down>"
